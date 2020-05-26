@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+    android:inputType="text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/enter_author_name"
+    android:id="@+id/AUTHOR_NAME"
+    />
+
+    <EditText
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_song_name"
+        android:id="@+id/SONG_NAME"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_lyrics"
+        android:id="@+id/FIND"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/RESULT"
+        android:textColor="#f00"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
